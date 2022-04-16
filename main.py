@@ -14,7 +14,7 @@ n_抽奖 = 13        # 参与抽奖的人数
 def 计算分数(n_table):
     score = np.zeros(n_table)  # 初始化得分数组
     excel = xlrd.open_workbook("test.xls")  # 打开excel文件
-    for j in range(n_table):  # 在12个表里提取数据
+    for j in range(n_table):  # 在13个表里提取数据
 
         sheet = excel.sheet_by_index(j)  # 根据下标获取工作薄，这里获取第一个sheet
         all_j = 总和(sheet,n_抽奖)
